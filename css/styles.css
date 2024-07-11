@@ -1,0 +1,104 @@
+body {
+  font-family: 'Courier New', monospace;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#contenedor-juego {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+#palabra {
+  font-size: 2em;
+  margin: 20px 0;
+  letter-spacing: 5px;
+}
+
+#teclado {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.tecla {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 40px; 
+  height: 40px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tecla:hover {
+  background-color: #45a049;
+  transform: scale(1.1);
+}
+
+.tecla:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+#ahorcado {
+  width: 200px;
+  height: 200px;
+  margin: 20px auto;
+  border: 2px solid #333;
+}
+
+#introduccion {
+  margin-bottom: 20px;
+}
+
+#btnEmpezar, #btnReiniciar {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#btnEmpezar:hover, #btnReiniciar:hover {
+  background-color: #45a049;
+}
+
+#mensaje {
+  font-size: 1.2em;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+.ultima-fila {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+#vidas-restantes {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #4CAF50;
+  margin-top: 10px;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego del Ahorcado</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" href="./public/logo.png">
+</head>
+<body>
+    <div id="contenedor-juego">
+        <h1>Juego del Ahorcado</h1>
+        <p>Creado por: Alan Cordoba</p>
+        <p id="vidas-restantes" style="display: none;">Vidas restantes: 6</p>
+        <div id="introduccion">
+            <p>Bienvenido al Juego del Ahorcado. Intenta adivinar la palabra oculta antes de que se complete el dibujo.</p>
+            <button id="btnEmpezar">Empezar Juego</button>
+        </div>
+        <div id="juego" style="display: none;">
+            <canvas id="ahorcado" width="200" height="200"></canvas>
+            <div id="palabra"></div>
+            <div id="mensaje"></div>
+            <div id="teclado"></div>
+        </div>
+        <button id="btnReiniciar" style="display: none;">Reiniciar Juego</button>
+    </div>
+    <audio id="tecla-sonido" src="./public/tecla.mp3"></audio>
+    <script src="./js/script.js"></script>
+</body>
+</html>
